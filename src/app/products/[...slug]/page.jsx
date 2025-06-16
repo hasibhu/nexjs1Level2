@@ -1,4 +1,6 @@
 const CatchAllRoutePage = ({ params }) => {
+
+    
   const path = params.slug?.join("/") || "";
 
   return (
