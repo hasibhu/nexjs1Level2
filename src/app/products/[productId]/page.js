@@ -1,16 +1,16 @@
-
+// app/products/[productId]/page.js
 
 const DynamicProductPage = async ({ params }) => {
+console.log(params);
+    const { productId } = await params; 
     
-    const products = await params;
+    console.log("Product ID:", productId);
 
-    console.log(products);
-
-    return (
-        <div>
-            <h2>Dynamic Product page</h2>
-        </div>
-    );
+  return (
+    <div>
+      <h2>Dynamic Product Page for {productId}</h2>
+    </div>
+  );
 };
 
 export default DynamicProductPage;
